@@ -5,7 +5,7 @@ links:
   - label: GitHub
     url: "https://github.com/EmillyMontilla"
   - label: Email
-    url: "emillymontilla76@gmail.com"
+    url: "mailto:emillymontilla76@gmail.com"
   - label: Relatórios
     url: "./relatorio/index.html"
 output:

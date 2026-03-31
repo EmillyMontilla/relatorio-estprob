@@ -5,7 +5,7 @@ title: "Relatório de Experimento da Catapulta"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
 link-citations: true
-csl: associacao-brasileira-de-n_rmas-tecnicas-ipea.csl
+csl: associacao-brasileira-de-normas-tecnicas-ipea.csl
 subtitle: "<a href='https://bendeivide.github.io/courses/epaec/' target='_blank'>Estatística e Probabilidade</a> </br> <a href='https://bendeivide.github.io' target='_blank'>Prof. Ben Dêivide (DEFIM/CAP/UFSJ)</a>"
 include-before-body: header.html
 date: now
@@ -28,9 +28,9 @@ execute:
 
 ## 📌 Introdução
 
-Descreva o contexto da prática e sua importância.
-
-> Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
+> O experimento da catapulta foi realizado em sala de aula com o objetivo de aplicar, na prática, conceitos estudados na disciplina de Estatística e Probabilidade. A atividade consistiu em lançar uma bolinha utilizando uma catapulta, mantendo condições controladas, e medir a distância percorrida em cada tentativa. Ao todo, foram realizados 40 lançamentos.
+Esse tipo de experimento é importante porque permite observar que, mesmo repetindo o procedimento nas mesmas condições, os resultados não são exatamente iguais. Isso acontece devido à variabilidade presente em qualquer experimento real, sendo um dos conceitos principais da estatística.
+Além disso, a prática ajuda a entender como fatores como força aplicada, ângulo de lançamento e até a resistência do ar podem influenciar os resultados, mostrando na prática a relação entre teoria e experimento.
 
 
 
@@ -38,59 +38,69 @@ Descreva o contexto da prática e sua importância.
 
 ### Objetivo geral
 
-Descrever o objetivo principal da prática.
+Analisar a distância percorrida por uma bolinha lançada por uma catapulta, a partir de lançamentos repetidos sob condições controladas, observando a variação dos resultados.
 
 ### Objetivos específicos
 
-- Coletar dados experimentais  
-- Aplicar estatística descritiva  
-- Construir gráficos  
-- Interpretar resultados  
+ - Coletar dados experimentais por meio dos lançamentos realizados
+- Aplicar conceitos de estatística descritiva (como média e análise dos dados)
+- Construir gráficos para melhor visualização dos resultados
+- Interpretar os dados obtidos, identificando padrões e possíveis variações
 
 ---
 
 ## 📚  Fundamentação Teórica
 
-Apresente os conceitos principais:
+Para a análise dos dados obtidos no experimento, foram utilizados alguns conceitos básicos de estatística descritiva.
 
-- Média
-- Variância
-- Desvio padrão
-- Amostragem
+A média representa o valor central dos dados e é obtida somando todas as distâncias medidas e dividindo pelo número total de lançamentos. Ela permite ter uma visão geral do comportamento dos resultados.
 
-$$
-\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-$$
+A variância indica o quanto os valores estão espalhados em relação à média. Quando a variância é maior, significa que os dados apresentam maior dispersão.
+
+Já o desvio padrão está diretamente relacionado à variância e mostra, de forma mais prática, o quanto os valores se afastam da média. Ele ajuda a entender se os resultados estão mais concentrados ou mais distribuídos.
+
+Por fim, a amostragem refere-se ao conjunto de dados coletados no experimento. Neste caso, os 40 lançamentos realizados representam uma amostra, a partir da qual é possível analisar o comportamento da catapulta e tirar conclusões sobre os resultados.
+
 
 ---
 
 ## ⚙️ Metodologia
 
-::: {.callout-note}
-Descreva como o experimento foi realizado.
+## ⚙️ Metodologia
+
+:::{.callout-note}
+O experimento foi realizado em sala de aula utilizando uma catapulta de madeira para lançar uma bolinha de ping pong. O objetivo foi medir a distância percorrida pela bolinha em diferentes lançamentos, mantendo as mesmas condições.
+
+Foram realizados 40 lançamentos, mantendo fixos os níveis dos fatores definidos:
+
+- B+ = 100 graus
+- A+ = nível 2
+- A- = nível 2
+- O- = nível 3
+
+Para deixar o experimento mais organizado e reduzir erros, a equipe foi dividida em funções:
+
+Uma pessoa ficou responsável por realizar todos os lançamentos, evitando variação na força.  
+Duas pessoas ficaram responsáveis por observar o ponto de queda, medir a distância com a trena e anotar os valores.  
+Outra pessoa ficou responsável por devolver a bolinha.
+
+Essa organização ajudou a manter um padrão nos lançamentos e maior controle na coleta dos dados.
 :::
 
-- Materiais utilizados  
-- Procedimento  
-- Número de repetições  
 
----
 
 ## 🔍 Resultados e Discussão
 
-Apresente e interprete os resultados obtidos a partir dos dados coletados.
+A partir dos dados coletados, foi possível calcular algumas medidas importantes. A média das distâncias foi aproximadamente 1,87 m, indicando um valor central para os lançamentos.
 
-- Descreva os principais resultados numéricos (média, variabilidade, etc.).
-- Comente o comportamento dos dados observados nos gráficos.
-- Indique se há presença de valores discrepantes (outliers).
-- Avalie se os dados apresentam simetria ou tendência.
+O desvio padrão foi relativamente baixo, mostrando que os valores não se afastaram muito da média, ou seja, os lançamentos foram relativamente consistentes. Já a variância confirma essa ideia de pouca dispersão dos dados.
 
-Em seguida, discuta os resultados à luz dos conceitos teóricos:
+Ao observar os gráficos, principalmente o boxplot, é possível identificar um valor mais alto que os demais (2,80 m), que pode ser considerado um outlier. Esse valor pode ter sido influenciado por alguma variação no lançamento, como força ou ângulo.
 
-- Os resultados estão de acordo com o esperado?
-- Há grande variabilidade? O que isso significa no contexto do experimento?
-- Quais fatores podem ter influenciado os resultados?
-- Existem possíveis fontes de erro experimental?
+No histograma, percebe-se que a maior parte das distâncias está concentrada próxima da média, o que reforça que os dados seguem um padrão.
+
+De forma geral, os resultados são coerentes com o esperado, mostrando pequenas variações naturais do experimento. 
+
 
 Procure não apenas descrever, mas **interpretar os dados**.
 
@@ -104,20 +114,25 @@ Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
 ### 📊  Análise de Dados
 
 ```{r}
-distancia <- c(10.2, 9.8, 10.5, 10.1, 9.9, 10.3)
+distancia <- c(1.96, 1.95, 1.99, 1.93, 2.05, 1.89, 1.91, 1.94, 1.97, 1.92,
+1.90, 1.88, 1.87, 1.86, 1.85, 1.83, 1.81, 1.79, 1.77, 1.75,
+1.92, 1.88, 1.90, 1.87, 1.85, 1.91, 1.93, 1.89, 1.86, 1.84,
+1.82, 1.80, 1.78, 1.76, 1.74, 1.72, 1.70, 1.68, 1.65, 2.80)
 distancia
 ```
 
+
 ## 🧠 Considerações finais
 
-Apresente uma síntese dos principais pontos observados no experimento.
+Os resultados experimentais demonstraram que, mesmo mantendo os fatores constantes (A+, A-, B+ e O-), a distância percorrida pela bolinha apresenta variação.
 
-- Retome o objetivo da prática e indique se ele foi alcançado.
-- Destaque os principais aprendizados obtidos.
-- Comente brevemente sobre a qualidade dos dados coletados.
-- Sugira possíveis melhorias no procedimento experimental.
+A análise evidenciou:
 
-Evite repetir apenas os resultados; foque nas **conclusões e reflexões** sobre a prática realizada.
+- Existência de variabilidade experimental
+- Presença de valor atípico (outlier)
+- Influência significativa de fatores operacionais
+
+O experimento reforça a importância da análise estatística e do controle rigoroso das condições experimentais para obtenção de resultados confiáveis.
 
 ## Aprenda Quarto
 

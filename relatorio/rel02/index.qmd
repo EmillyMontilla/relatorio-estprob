@@ -1,7 +1,7 @@
 ---
 # Só mude aqui!!!!
-author: "Nome do Aluno"
-title: "Relatório de Aula Prática 02"
+author: "Emilly Beatriz de Lima"
+title: "Relatório introdução ao R,"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
 link-citations: true
@@ -28,99 +28,106 @@ execute:
 
 ## 📌 Introdução
 
-Descreva o contexto da prática e sua importância.
+A partir das aulas iniciais do curso de R Básico 2024, ministradas pelo professor Ben Dêivide, foi possível ter o primeiro contato com a linguagem R e com o ambiente RStudio. Nessas aulas, foram apresentados conceitos fundamentais, como a instalação do software, o funcionamento do ambiente de trabalho, o uso do console, além dos princípios básicos da linguagem, como o fato de que tudo no R é tratado como objeto e que todas as operações são realizadas por meio de funções.
 
-> Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
+O R, desenvolvido por Robert Gentleman e Ross Ihaka, é um software livre e de código aberto, amplamente utilizado no meio acadêmico. Seu desenvolvimento contínuo pela comunidade científica contribui para a grande variedade de recursos disponíveis.
 
+Dessa forma, este relatório tem como objetivo apresentar a experiência inicial com o R, com base nas primeiras aulas do professor, destacando os principais conceitos aprendidos e as dificuldades encontradas durante esse primeiro contato com a linguagem.
 
 
 ## 🎯 Objetivos
 
 ### Objetivo geral
 
-Descrever o objetivo principal da prática.
+Compreender os conceitos iniciais da linguagem R e sua utilização como ferramenta para análise de dados no contexto da disciplina de Estatística e Probabilidade.
 
 ### Objetivos específicos
 
-- Coletar dados experimentais  
-- Aplicar estatística descritiva  
-- Construir gráficos  
-- Interpretar resultados  
+- Entender o que é o R e sua finalidade;
+- Aprender como instalar e utilizar o RStudio;
+- Compreender o funcionamento do ambiente do R;
+- Identificar os princípios fundamentais da linguagem;
+- Explorar conceitos como objetos, funções e ambiente global;
+- Conhecer a origem e desenvolvimento do R;
+- Realizar os primeiros contatos práticos com scripts e diretórios de trabalho.
 
 ---
 
 ## 📚  Fundamentação Teórica
 
-Apresente os conceitos principais:
+O R é um ambiente de software livre e de código aberto voltado principalmente para análise estatística, manipulação de dados e geração de gráficos. Sua importância se deve ao fato de ser amplamente utilizado pela comunidade científica, o que garante constante evolução e diversidade de recursos.
 
-- Média
-- Variância
-- Desvio padrão
-- Amostragem
+A linguagem foi criada por Robert Gentleman e Ross Ihaka, em 1991, na Universidade de Auckland, na Nova Zelândia, como uma alternativa à linguagem S, desenvolvida por John Chambers. O projeto foi disponibilizado como software livre em 1995, e posteriormente passou a ser mantido pelo R Core Team. Já o ambiente de desenvolvimento mais utilizado, o RStudio, foi criado por J. J. Allaire.
 
-$$
-\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-$$
+O R possui três princípios fundamentais:
 
----
+Segundo o @Rbasico2022, tudo que existe no R é um objeto;
+Tudo que acontece no R é uma chamada de função;
+Interfaces com outros programas fazem parte do R.
+
+Esses princípios mostram que o R funciona de forma estruturada e lógica, onde praticamente todas as operações envolvem objetos e funções.
+
+Além disso, o R é uma linguagem interpretada, ou seja, os comandos são executados diretamente no console, sem necessidade de compilação prévia. Ele também utiliza escopo léxico, o que influencia na forma como variáveis são acessadas dentro de funções.
+
+Outro conceito importante é o ambiente global, que funciona como um espaço onde os objetos criados pelo usuário são armazenados. O usuário pode visualizar esses objetos dentro do RStudio, facilitando o controle e organização dos dados.
+
+O diretório de trabalho também é essencial, pois define o local no computador onde o R irá buscar ou salvar arquivos. Isso é fundamental para garantir que scripts e dados sejam corretamente acessados.
+
+Por fim, destaca-se que o R possui diversas estruturas de dados (cerca de 24 tipos), o que permite grande flexibilidade na manipulação de informações.
+
+
+
+````{r, fig.cap="Criadores do R: Robert Gentleman e Ross Ihaka", out.width="40%"}
+knitr::include_graphics("C:/Users/W28/Downloads/relatorio-estprob/criadores_r.png")
+````
 
 ## ⚙️ Metodologia
 
-::: {.callout-note}
-Descreva como o experimento foi realizado.
-:::
+A atividade foi realizada com base nas primeiras aulas do curso de R, sem experiência prévia com a linguagem.
 
-- Materiais utilizados  
-- Procedimento  
-- Número de repetições  
+Inicialmente, foi feita a instalação do R e do RStudio. Em seguida, foi explorada a interface do RStudio, observando o console, o ambiente global e a área de scripts.
 
+Foram realizados comandos simples no console para entender como o R responde às instruções. Também foram criados alguns objetos básicos para observar como eles aparecem no ambiente global.
+
+Durante a prática, foi feita a configuração do diretório de trabalho e o salvamento de scripts, com o objetivo de organizar melhor os comandos utilizados.
+
+A atividade teve caráter introdutório, focando mais na familiarização com a ferramenta do que na realização de análises complexas.
+
+```{r, fig.cap="Interface do RStudio utilizada para execução dos comandos ", out.width="70%"}
+knitr::include_graphics("C:/Users/W28/Downloads/relatorio-estprob/interface do R.png")
+```
 ---
 
 ## 🔍 Resultados e Discussão
 
-Apresente e interprete os resultados obtidos a partir dos dados coletados.
+Durante o primeiro contato com o R, foi possível perceber que a linguagem possui uma estrutura lógica bastante consistente, embora inicialmente pareça diferente de outras linguagens mais comuns.
 
-- Descreva os principais resultados numéricos (média, variabilidade, etc.).
-- Comente o comportamento dos dados observados nos gráficos.
-- Indique se há presença de valores discrepantes (outliers).
-- Avalie se os dados apresentam simetria ou tendência.
+Um dos pontos mais marcantes foi o conceito de que tudo no R é um objeto. Isso ficou evidente ao criar variáveis simples, que já passam a ser tratadas como objetos dentro do ambiente global. Esse conceito facilita a organização dos dados, mas exige atenção do usuário.
 
-Em seguida, discuta os resultados à luz dos conceitos teóricos:
+Outro aspecto importante foi entender que tudo é função. Mesmo operações simples, como somas ou manipulação de dados, são realizadas por meio de funções. Isso mostra que dominar funções é essencial para utilizar bem a linguagem.
 
-- Os resultados estão de acordo com o esperado?
-- Há grande variabilidade? O que isso significa no contexto do experimento?
-- Quais fatores podem ter influenciado os resultados?
-- Existem possíveis fontes de erro experimental?
+A utilização do RStudio também se mostrou fundamental, pois sua interface facilita muito o aprendizado. A divisão em quadrantes permite acompanhar o console, os scripts e os objetos simultaneamente, o que melhora a produtividade.
 
-Procure não apenas descrever, mas **interpretar os dados**.
+No entanto, algumas dificuldades iniciais foram percebidas, principalmente na configuração do diretório de trabalho e na compreensão de erros no console. Isso indica que o aprendizado do R exige prática constante e atenção aos detalhes.
 
-### 💬 Exemplo de como citar uma referência bibliográfica
+Ao relacionar a prática com a teoria, observa-se que os princípios definidos por Chambers realmente se aplicam no uso da linguagem. A estrutura baseada em objetos e funções torna o R muito poderoso para análise de dados, embora exija um certo tempo de adaptação.
 
-Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
+De forma geral, a experiência inicial com o R foi positiva, mostrando que a ferramenta tem grande potencial para aplicações em Estatística e Probabilidade, especialmente na análise e visualização de dados.
 
-- Segundo @Rbasico2022
-- Tudo é um objeto em R [@Rbasico2022]
 
-### 📊  Análise de Dados
-
-```{r}
-distancia <- c(10.2, 9.8, 10.5, 10.1, 9.9, 10.3)
-distancia
-```
 
 ## 🧠 Considerações finais
 
-Apresente uma síntese dos principais pontos observados no experimento.
+A realização desta atividade permitiu o primeiro contato com o software R, utilizado nas aulas de Estatística e Probabilidade. Apesar das dificuldades iniciais no uso do software R, foi possível compreender seus principais conceitos ao longo da atividade.
 
-- Retome o objetivo da prática e indique se ele foi alcançado.
-- Destaque os principais aprendizados obtidos.
-- Comente brevemente sobre a qualidade dos dados coletados.
-- Sugira possíveis melhorias no procedimento experimental.
+Foram entendidos conceitos básicos, como a estrutura de objetos e a execução de comandos. O uso do RStudio facilitou o processo.
 
-Evite repetir apenas os resultados; foque nas **conclusões e reflexões** sobre a prática realizada.
+Conclui-se que o R é uma ferramenta importante para a análise de dados e para a formação acadêmica.
 
 ## Aprenda Quarto
 
 Acesse [Quarto](https://quarto.org/).
 
-## 📖 Referências
+## 📖 Referências 
+
+Acesse [EAR: R básico 2024] (https://bendeivide.github.io).

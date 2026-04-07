@@ -1,7 +1,7 @@
 ---
 # Só mude aqui!!!!
 author: "Emilly Beatriz de Lima"
-title: "Relatório de Experimento da Catapulta"
+title: "Relatório de Experimento da Catapulta- Atualizado"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
 link-citations: true

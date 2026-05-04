@@ -28,54 +28,34 @@ execute:
 
 ## 📌 Introdução
 
-A partir das aulas iniciais do curso de R Básico 2024, ministradas pelo professor Ben Dêivide, foi possível ter o primeiro contato com a linguagem R e com o ambiente RStudio. Nessas aulas, foram apresentados conceitos fundamentais, como a instalação do software, o funcionamento do ambiente de trabalho, o uso do console, além dos princípios básicos da linguagem, como o fato de que tudo no R é tratado como objeto e que todas as operações são realizadas por meio de funções.
+A partir das aulas iniciais do curso de R Básico 2024, ministradas pelo professor Ben Dêivide, foi possível ter o primeiro contato com a linguagem R e com o ambiente RStudio. Durante essas aulas, foram apresentados conceitos fundamentais relacionados ao funcionamento da linguagem, bem como sua aplicação na área de estatística.
 
-O R, desenvolvido por Robert Gentleman e Ross Ihaka, é um software livre e de código aberto, amplamente utilizado no meio acadêmico. Seu desenvolvimento contínuo pela comunidade científica contribui para a grande variedade de recursos disponíveis.
+O R é amplamente utilizado para análise de dados, sendo reconhecido pela sua capacidade de manipular informações e gerar gráficos de forma eficiente. Além disso, trata-se de um software livre, o que contribui para sua ampla utilização no meio acadêmico.
 
-Dessa forma, este relatório tem como objetivo apresentar a experiência inicial com o R, com base nas primeiras aulas do professor, destacando os principais conceitos aprendidos e as dificuldades encontradas durante esse primeiro contato com a linguagem.
-
+Dessa forma, este relatório tem como objetivo apresentar os principais conceitos aprendidos nas aulas iniciais, juntamente com alguns exemplos práticos desenvolvidos no ambiente R.
 
 ## 🎯 Objetivos
 
 ### Objetivo geral
-
-Compreender os conceitos iniciais da linguagem R e sua utilização como ferramenta para análise de dados no contexto da disciplina de Estatística e Probabilidade.
+Compreender os conceitos iniciais da linguagem R e sua aplicação na análise de dados.
 
 ### Objetivos específicos
 
-- Entender o que é o R e sua finalidade;
-- Aprender como instalar e utilizar o RStudio;
-- Compreender o funcionamento do ambiente do R;
-- Identificar os princípios fundamentais da linguagem;
-- Explorar conceitos como objetos, funções e ambiente global;
-- Conhecer a origem e desenvolvimento do R;
-- Realizar os primeiros contatos práticos com scripts e diretórios de trabalho.
-
+- Conhecer o ambiente R e o RStudio;
+- Compreender o conceito de objetos e funções;
+- Executar comandos básicos no console;
+- Criar estruturas simples de dados;
+- Aplicar funções básicas para análise de dados;
+- Interpretar os resultados obtidos.
 ---
 
 ## 📚  Fundamentação Teórica
 
-O R é um ambiente de software livre e de código aberto voltado principalmente para análise estatística, manipulação de dados e geração de gráficos. Sua importância se deve ao fato de ser amplamente utilizado pela comunidade científica, o que garante constante evolução e diversidade de recursos.
+O R é uma linguagem de programação voltada para análise estatística e manipulação de dados. Sua estrutura é baseada no uso de objetos e funções, o que permite uma organização eficiente das informações.
 
-A linguagem foi criada por Robert Gentleman e Ross Ihaka, em 1991, na Universidade de Auckland, na Nova Zelândia, como uma alternativa à linguagem S, desenvolvida por John Chambers. O projeto foi disponibilizado como software livre em 1995, e posteriormente passou a ser mantido pelo R Core Team. Já o ambiente de desenvolvimento mais utilizado, o RStudio, foi criado por J. J. Allaire.
+Segundo Batista e Oliveira (2022), o R opera a partir do princípio de que tudo pode ser tratado como objeto, e todas as operações são realizadas por meio de funções. Essa característica torna a linguagem flexível e poderosa para análises.
 
-O R possui três princípios fundamentais:
-
-Segundo o @Rbasico2022, tudo que existe no R é um objeto;
-Tudo que acontece no R é uma chamada de função;
-Interfaces com outros programas fazem parte do R.
-
-Esses princípios mostram que o R funciona de forma estruturada e lógica, onde praticamente todas as operações envolvem objetos e funções.
-
-Além disso, o R é uma linguagem interpretada, ou seja, os comandos são executados diretamente no console, sem necessidade de compilação prévia. Ele também utiliza escopo léxico, o que influencia na forma como variáveis são acessadas dentro de funções.
-
-Outro conceito importante é o ambiente global, que funciona como um espaço onde os objetos criados pelo usuário são armazenados. O usuário pode visualizar esses objetos dentro do RStudio, facilitando o controle e organização dos dados.
-
-O diretório de trabalho também é essencial, pois define o local no computador onde o R irá buscar ou salvar arquivos. Isso é fundamental para garantir que scripts e dados sejam corretamente acessados.
-
-Por fim, destaca-se que o R possui diversas estruturas de dados (cerca de 24 tipos), o que permite grande flexibilidade na manipulação de informações.
-
-
+Além disso, o R é um linguagem interpretada, ou seja, os comandos são executados diretamente no console, permitindo resultados imediatos. O ambiente RStudio auxilia nesse processo, organizando o espaço de trabalho em diferentes áreas, como console, scripts e ambiente global.
 
 ````{r, fig.cap="Criadores do R: Robert Gentleman e Ross Ihaka", out.width="40%"}
 knitr::include_graphics("C:/Users/W28/Downloads/relatorio-estprob/criadores_r.png")
@@ -83,51 +63,79 @@ knitr::include_graphics("C:/Users/W28/Downloads/relatorio-estprob/criadores_r.pn
 
 ## ⚙️ Metodologia
 
-A atividade foi realizada com base nas primeiras aulas do curso de R, sem experiência prévia com a linguagem.
+A atividade foi desenvolvida a partir das aulas iniciais do curso, utilizando o software R e o ambiente RStudio.
 
-Inicialmente, foi feita a instalação do R e do RStudio. Em seguida, foi explorada a interface do RStudio, observando o console, o ambiente global e a área de scripts.
+Inicialmente, foi realizada a instalação dos programas e a exploração da interface. Em seguida, foram executados comandos simples no console, com o objetivo de compreender o funcionamento da linguagem.
 
-Foram realizados comandos simples no console para entender como o R responde às instruções. Também foram criados alguns objetos básicos para observar como eles aparecem no ambiente global.
-
-Durante a prática, foi feita a configuração do diretório de trabalho e o salvamento de scripts, com o objetivo de organizar melhor os comandos utilizados.
-
-A atividade teve caráter introdutório, focando mais na familiarização com a ferramenta do que na realização de análises complexas.
-
-```{r, fig.cap="Interface do RStudio utilizada para execução dos comandos ", out.width="70%"}
-knitr::include_graphics("C:/Users/W28/Downloads/relatorio-estprob/interface do R.png")
-```
----
+Durante a prática, foram criados objetos, realizados cálculos matemáticos e aplicadas funções básicas. Também foram construídos exemplos simples com vetores e gráficos, permitindo uma melhor compreensão do comportamento do R.
 
 ## 🔍 Resultados e Discussão
 
-Durante o primeiro contato com o R, foi possível perceber que a linguagem possui uma estrutura lógica bastante consistente, embora inicialmente pareça diferente de outras linguagens mais comuns.
+Durante as atividades, foi possível observar como o R trabalha com objetos e funções.
 
-Um dos pontos mais marcantes foi o conceito de que tudo no R é um objeto. Isso ficou evidente ao criar variáveis simples, que já passam a ser tratadas como objetos dentro do ambiente global. Esse conceito facilita a organização dos dados, mas exige atenção do usuário.
+**Criação de objetos**
 
-Outro aspecto importante foi entender que tudo é função. Mesmo operações simples, como somas ou manipulação de dados, são realizadas por meio de funções. Isso mostra que dominar funções é essencial para utilizar bem a linguagem.
+```{r}
+x <- 10
+y <- 5
+```
+Os valores foram armazenados em objetos, permitindo sua reutilização em outras operações.
 
-A utilização do RStudio também se mostrou fundamental, pois sua interface facilita muito o aprendizado. A divisão em quadrantes permite acompanhar o console, os scripts e os objetos simultaneamente, o que melhora a produtividade.
+**Operações matemáticas**
 
-No entanto, algumas dificuldades iniciais foram percebidas, principalmente na configuração do diretório de trabalho e na compreensão de erros no console. Isso indica que o aprendizado do R exige prática constante e atenção aos detalhes.
+```{r}
+x + y
+x * y
+x / y
+```
+Essas operações demonstram como o R executa cálculos de forma direta no console.
 
-Ao relacionar a prática com a teoria, observa-se que os princípios definidos por Chambers realmente se aplicam no uso da linguagem. A estrutura baseada em objetos e funções torna o R muito poderoso para análise de dados, embora exija um certo tempo de adaptação.
+**Criação de vetor**
 
-De forma geral, a experiência inicial com o R foi positiva, mostrando que a ferramenta tem grande potencial para aplicações em Estatística e Probabilidade, especialmente na análise e visualização de dados.
+``` {r}
+numeros <- c(1, 2, 3, 4, 5)
+numeros
+```
+O vetor permite armazenar vários valores em uma única variável.
 
+**Cálculo de média**
 
+```{r}
+mean(numeros)
+```
+A função **mean()** calcula a média dos valores, facilitando a análise dos dados.
+
+**Gerando sequências**
+
+``` {R}
+seq(1, 10, by = 2)
+```
+Essa função gera uma sequência numérica com intervalo definido.
+
+**Gráfico simpleS**
+
+```{r}
+plot(numeros, type = "o",
+     main = "Exemplo de gráfico no R",
+     xlab = "Posição",
+     ylab = "Valores")
+```
+O gráfico permite visualizar o comportamento dos dados de forma mais clara.
+
+De modo geral, os resultados mostram que o R é uma ferramenta prática e eficiente para manipulação e análise de dados. No entanto, também foi possível perceber que pequenos erros de digitação podem gerar falhas na execução, o que exige atenção durante o uso.
 
 ## 🧠 Considerações finais
 
-A realização desta atividade permitiu o primeiro contato com o software R, utilizado nas aulas de Estatística e Probabilidade. Apesar das dificuldades iniciais no uso do software R, foi possível compreender seus principais conceitos ao longo da atividade.
+A realização desta atividade permitiu o desenvolvimento de um primeiro contato com a linguagem R e com o ambiente RStudio, possibilitando a compreensão de seus conceitos fundamentais e de sua aplicação inicial na área de Estatística e Probabilidade. Ao longo das aulas, foi possível perceber que o R possui uma estrutura lógica baseada no uso de objetos e funções, o que contribui para uma organização mais eficiente dos dados e para a execução de análises.
 
-Foram entendidos conceitos básicos, como a estrutura de objetos e a execução de comandos. O uso do RStudio facilitou o processo.
+Apesar das dificuldades iniciais, principalmente relacionadas à adaptação ao ambiente, à interpretação de mensagens de erro e à configuração do diretório de trabalho, a prática desenvolvida durante as atividades contribuiu para uma melhor compreensão do funcionamento da linguagem. Esses desafios fazem parte do processo de aprendizagem e evidenciam a importância da prática contínua para o domínio da ferramenta.
 
-Conclui-se que o R é uma ferramenta importante para a análise de dados e para a formação acadêmica.
+Além disso, a utilização do RStudio mostrou-se essencial, uma vez que sua interface facilita a visualização dos objetos criados, a execução de comandos e a organização dos scripts. Isso torna o processo de aprendizado mais acessível, principalmente para iniciantes.
 
-## Aprenda Quarto
+Os exemplos práticos realizados, como a criação de objetos, execução de operações matemáticas, construção de vetores e geração de gráficos, permitiram observar na prática como o R pode ser utilizado para análise e interpretação de dados. Esses recursos demonstram o potencial da linguagem para aplicações mais avançadas ao longo da formação acadêmica.
 
-Acesse [Quarto](https://quarto.org/).
+Dessa forma, conclui-se que o R é uma ferramenta relevante e eficiente para análise de dados, sendo amplamente aplicada no meio acadêmico e profissional. Seu aprendizado, embora desafiador no início, tende a se tornar mais intuitivo com o tempo e a prática, contribuindo significativamente para o desenvolvimento de habilidades na área de Estatística e Probabilidade.
 
 ## 📖 Referências 
 
-Acesse [EAR: R básico 2024] (https://bendeivide.github.io).
+BATISTA, B. D. O.; OLIVEIRA, D. A. B. J. **R básico**. 1. ed. Ouro Branco, MG: [s.n.], 2022. p. 321

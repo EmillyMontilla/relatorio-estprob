@@ -1,7 +1,7 @@
 ---
 # Só mude aqui!!!!
 author: "Emilly Beatriz de Lima"
-title: "Relatório de Experimento da Catapulta- Atualizado"
+title: "Relatório de Experimento da Catapulta"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
 link-citations: true
@@ -28,7 +28,7 @@ execute:
 
 ## 📌 Introdução
 
-> O experimento da catapulta foi realizado em sala de aula com o objetivo de aplicar, na prática, conceitos estudados na disciplina de Estatística e Probabilidade. A atividade consistiu em lançar uma bolinha utilizando uma catapulta, mantendo condições controladas, e medir a distância percorrida em cada tentativa. Ao todo, foram realizados 40 lançamentos.
+ O experimento da catapulta foi realizado em sala de aula com o objetivo de aplicar, na prática, conceitos estudados na disciplina de Estatística e Probabilidade. A atividade consistiu em lançar uma bolinha utilizando uma catapulta, mantendo condições controladas, e medir a distância percorrida em cada tentativa. Ao todo, foram realizados 40 lançamentos.
 Esse tipo de experimento é importante porque permite observar que, mesmo repetindo o procedimento nas mesmas condições, os resultados não são exatamente iguais. Isso acontece devido à variabilidade presente em qualquer experimento real, sendo um dos conceitos principais da estatística.
 Além disso, a prática ajuda a entender como fatores como força aplicada, ângulo de lançamento e até a resistência do ar podem influenciar os resultados, mostrando na prática a relação entre teoria e experimento.
 
@@ -42,33 +42,51 @@ Analisar a distância percorrida por uma bolinha lançada por uma catapulta, a p
 
 ### Objetivos específicos
 
- - Coletar dados experimentais por meio dos lançamentos realizados
-- Aplicar conceitos de estatística descritiva (como média e análise dos dados)
-- Construir gráficos para melhor visualização dos resultados
-- Interpretar os dados obtidos, identificando padrões e possíveis variações
+ ● Coletar dados experimentais
+Realizar os lançamentos da catapulta sob as mesmas condições estabelecidas, registrando as distâncias obtidas em cada tentativa, a fim de obter um conjunto de dados para análise.
 
+● Aplicar estatística descritiva
+Utilizar medidas como média, variância e desvio padrão para resumir os dados e avaliar o comportamento dos lançamentos, permitindo identificar a presença de variações.
+
+● Construir gráficos
+Representar os dados por meio de gráficos, como histograma e boxplot, com o objetivo de visualizar a distribuição das distâncias, analisar a dispersão dos valores e identificar possíveis valores atípicos.
+
+● Analisar os resultados
+Examinar os dados obtidos, relacionando as medidas estatísticas e os gráficos com o comportamento observado no experimento, a fim de compreender as variações presentes nos lançamentos.
 ---
 
 ## 📚  Fundamentação Teórica
 
-Para a análise dos dados obtidos no experimento, foram utilizados alguns conceitos básicos de estatística descritiva.
+Para analisar os dados obtidos no experimento, foram utilizados conceitos básicos de estatística descritiva, que ajudam a resumir e interpretar os valores coletados.
 
-A média representa o valor central dos dados e é obtida somando todas as distâncias medidas e dividindo pelo número total de lançamentos. Ela permite ter uma visão geral do comportamento dos resultados.
+A média aritmética representa o valor central dos dados e é calculada somando todas as distâncias e dividindo pelo número total de lançamentos:
+$$
+\bar{x} = \frac{x_1 + x_2 + \cdots + x_n}{n}
+$$
+Essa medida permite ter uma noção geral de onde os valores estão concentrados.
 
-A variância indica o quanto os valores estão espalhados em relação à média. Quando a variância é maior, significa que os dados apresentam maior dispersão.
+A variância mede o quanto os dados estão espalhados em relação à média. Ela é calculada pela média dos quadrados das diferenças entre cada valor e a média:
 
-Já o desvio padrão está diretamente relacionado à variância e mostra, de forma mais prática, o quanto os valores se afastam da média. Ele ajuda a entender se os resultados estão mais concentrados ou mais distribuídos.
+$$
+s^2 = \frac{\sum (x_i - \bar{x})^2}{n - 1}
+$$
+Quando a variância é maior, significa que os valores estão mais dispersos.
 
-Por fim, a amostragem refere-se ao conjunto de dados coletados no experimento. Neste caso, os 40 lançamentos realizados representam uma amostra, a partir da qual é possível analisar o comportamento da catapulta e tirar conclusões sobre os resultados.
+O desvio padrão está diretamente relacionado à variância e é obtido pela raiz quadrada desse valor:
+
+$$
+s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n - 1}}
+$$
+Ele é mais fácil de interpretar, pois está na mesma unidade dos dados (metros, neste caso), indicando o quanto, em média, os valores se afastam da média.
+
+Além disso, os dados coletados no experimento podem ser considerados uma amostra, já que representam apenas uma parte de todas as possíveis medições que poderiam ser realizadas. A partir dessa amostra, é possível analisar o comportamento dos lançamentos e tirar conclusões sobre o experimento.
 
 
 ---
 
-## ⚙️ Metodologia
 
 ## ⚙️ Metodologia
 
-:::{.callout-note}
 O experimento foi realizado em sala de aula utilizando uma catapulta de madeira para lançar uma bolinha de ping pong. O objetivo foi medir a distância percorrida pela bolinha em diferentes lançamentos, mantendo as mesmas condições.
 
 Foram realizados 40 lançamentos, mantendo fixos os níveis dos fatores definidos:
@@ -85,9 +103,6 @@ Duas pessoas ficaram responsáveis por observar o ponto de queda, medir a distâ
 Outra pessoa ficou responsável por devolver a bolinha.
 
 Essa organização ajudou a manter um padrão nos lançamentos e maior controle na coleta dos dados.
-:::
-
-
 
 ## 🔍 Resultados e Discussão
 
@@ -102,40 +117,67 @@ No histograma, percebe-se que a maior parte das distâncias está concentrada pr
 De forma geral, os resultados são coerentes com o esperado, mostrando pequenas variações naturais do experimento. 
 
 
-Procure não apenas descrever, mas **interpretar os dados**.
-
-### 💬 Exemplo de como citar uma referência bibliográfica
-
-Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
-
-- Segundo @Rbasico2022
-- Tudo é um objeto em R [@Rbasico2022]
 
 ### 📊  Análise de Dados
+
+A análise foi realizada a partir das distâncias obtidas nos 40 lançamentos. De modo geral, os valores apresentaram pouca variação, indicando um comportamento relativamente uniforme nos resultados.
+
+Ainda assim, observa-se a existência de pequenas diferenças entre as medições. Essas variações podem estar associadas a alterações sutis nas condições de cada lançamento. Em particular, a força aplicada no momento de acionar a catapulta pode não ter sido exatamente a mesma em todas as tentativas, influenciando a distância percorrida pela bolinha.
+
+Além disso, fatores externos, como a resistência do ar, também podem ter contribuído para pequenas variações no trajeto da bolinha, mesmo que de forma pouco perceptível.
+
+Verifica-se também a presença de um valor mais elevado em relação aos demais, indicando um comportamento fora do padrão em uma das medições.
+
+De forma geral, os dados apresentam consistência, com variações que são esperadas em um experimento prático, mesmo quando se busca manter as condições controladas.
+
 
 ```{r}
 distancia <- c(1.96, 1.95, 1.99, 1.93, 2.05, 1.89, 1.91, 1.94, 1.97, 1.92,
 1.90, 1.88, 1.87, 1.86, 1.85, 1.83, 1.81, 1.79, 1.77, 1.75,
 1.92, 1.88, 1.90, 1.87, 1.85, 1.91, 1.93, 1.89, 1.86, 1.84,
 1.82, 1.80, 1.78, 1.76, 1.74, 1.72, 1.70, 1.68, 1.65, 2.80)
-distancia
 ```
 
 
+```{r, echo=TRUE}
+hist(distancia,
+     main = "Histograma das Distâncias",
+     xlab = "Distância",
+     ylab = "Frequência",
+     col = "lightblue",
+     border = "black")
+```
+
+```{r, echo=TRUE}
+boxplot(distancia,
+        main = "Boxplot das Distâncias",
+        ylab = "Distância",
+        col = "lightblue",
+        border = "black",
+        col.out = "red",
+        pch = 19)
+```
+
+``` {r, echo=TRUE}
+# Gráfico de linha - Evolução ao longo das 40 repetições
+plot(distancia, type = "o",
+     main = "Evolução ao longo das 40 repetições",
+     xlab = "Repetições",
+     ylab = "Distância (m)",
+     col = "red")
+```
+
 ## 🧠 Considerações finais
+Os resultados obtidos mostram que, mesmo com a tentativa de manter as condições do experimento constantes, as distâncias dos lançamentos apresentaram variações. Isso evidencia a dificuldade de reproduzir exatamente as mesmas condições em todos os ensaios.
 
-Os resultados experimentais demonstraram que, mesmo mantendo os fatores constantes (A+, A-, B+ e O-), a distância percorrida pela bolinha apresenta variação.
+Parte dessa variação pode ser explicada por pequenas diferenças na força aplicada no momento de acionar a catapulta, bem como por variações no ângulo de lançamento. Além disso, fatores externos, como a resistência do ar e possíveis correntes no ambiente, também podem ter influenciado os resultados, ainda que de forma sutil.
 
-A análise evidenciou:
+Destaca-se a presença de um valor mais elevado (2,80 m), identificado como outlier (valor fora do padrão observado nos demais dados). Esse resultado provavelmente está associado a uma variação pontual no lançamento.
 
-- Existência de variabilidade experimental
-- Presença de valor atípico (outlier)
-- Influência significativa de fatores operacionais
-
-O experimento reforça a importância da análise estatística e do controle rigoroso das condições experimentais para obtenção de resultados confiáveis.
-
-## Aprenda Quarto
-
-Acesse [Quarto](https://quarto.org/).
+De modo geral, os dados apresentaram comportamento consistente, com a maioria das distâncias concentradas próxima à média. O experimento permitiu observar, na prática, a existência de variabilidade em dados reais e reforçou a importância do uso de ferramentas estatísticas para sua análise e interpretação.
 
 ## 📖 Referências
+
+DEVORE, Jay L. **Probabilidade e Estatística para Engenharia e Ciências**. 9. ed. São Paulo: Cengage Learning, 2018.
+
+BATISTA, B. D. O.; OLIVEIRA, D. A. B. J. **R básico**. 1. ed. Ouro Branco, MG: [s.n.], 2022. p. 321

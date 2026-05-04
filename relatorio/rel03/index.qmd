@@ -1,6 +1,6 @@
 ---
 # Só mude aqui!!!!
-author: "Nome do Aluno"
+author: "Emilly Beatriz de Lima"
 title: "Relatório de Aula Prática 03"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
@@ -119,8 +119,5 @@ Apresente uma síntese dos principais pontos observados no experimento.
 
 Evite repetir apenas os resultados; foque nas **conclusões e reflexões** sobre a prática realizada.
 
-## Aprenda Quarto
-
-Acesse [Quarto](https://quarto.org/).
 
 ## 📖 Referências
